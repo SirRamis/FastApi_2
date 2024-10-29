@@ -12,9 +12,9 @@ class Model(DeclarativeBase):
     pass
 
 class TaskOrm(Model):
-    __tablename__ =  "task"
+    __tablename__ = "task"
 
-    id: Mapped[int]  = mapped_column(primary_key=True)
+    id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str]
     description: Mapped[Optional[str]]
 
